@@ -1,0 +1,27 @@
+@mixin heading-font {
+    
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+@mixin btnfont {
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+
+@mixin alt-font {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@mixin pstyle {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+}
+
+
+

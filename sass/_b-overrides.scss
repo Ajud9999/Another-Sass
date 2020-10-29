@@ -1,0 +1,25 @@
+.btn-outline{
+    color:$white !important;
+    border: 1px solid;
+    border-color: white;
+    &:hover{
+        color: $white;
+        border-color: $theme-primary;
+        background-color: $theme-primary;
+    }
+}
+
+.btn {
+    border-radius: 300px;
+    @include btnfont;
+    
+}
+
+.btn-xl {
+    font-size: 11px;
+    padding: 15px 45px;
+}
+
+.bg-primary{
+   background: $primary;
+}

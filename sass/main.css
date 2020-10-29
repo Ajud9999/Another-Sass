@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+.btn-outline {
+  color: #fff !important;
+  border: 1px solid;
+  border-color: white;
+}
+
+.btn-outline:hover {
+  color: #fff;
+  border-color: #fdcc52;
+  background-color: #fdcc52;
+}
+
+.btn {
+  border-radius: 300px;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
+
+.bg-primary {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdcc52), to(#fdc539));
+  background: linear-gradient(#fdcc52, #fdc539);
+}
+
+.masterhead {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+  background: url(../images/bg-pattern.png), #7b4397;
+  background: url(../images/bg-pattern.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+  background: url(../images/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
+}
+
+.masterhead .head-content {
+  max-width: 500px;
+}
+
+.masterhead h1 {
+  font-size: 50px;
+}
+
+.device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.device-container .screen img {
+  border-radius: 3px;
+}
+
+.device-mockup.iphone6_plus, .device-mockup.iphone6_plus.portrait {
+  padding-bottom: 201.76%;
+}
+
+.device-mockup {
+  position: relative;
+  width: 100%;
+}
+
+.device-mockup.iphone6_plus.portrait.white > .device, .device-mockup.iphone6_plus.white > .device {
+  background-image: url(../images/iphone.png);
+}
+
+.device-mockup > .device {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.device-mockup.iphone6_plus.portrait > .device > .screen, .device-mockup.iphone6_plus > .device > .screen {
+  top: 11.58%;
+  bottom: 11.58%;
+  left: 5.97%;
+  right: 5.97%;
+}
+
+.device-mockup > .device > .screen {
+  position: absolute;
+  top: 11.0438729%;
+  bottom: 14.6747352%;
+  left: 13.364486%;
+  right: 13.364486%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .masterhead h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  a.btn.btn-outline.btn-xl {
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand {
+  color: #fdcc52;
+  font-weight: 600;
+}
+
+#mainNav .navbar-brand:hover {
+  color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 8px 10px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 11px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#mainNav .navbar-nav > li > a:hover {
+  color: #000;
+}
+
+.about {
+  position: relative;
+  padding: 150px 0;
+}
+
+.about h2 {
+  font-size: 70px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about .badge-link {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.about img {
+  height: 60px;
+}
+
+.services {
+  padding: 100px 0;
+}
+
+.services h3 {
+  font-size: 50px;
+}
+
+.services p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.services .service-heading {
+  margin-bottom: 100px;
+}
+
+.services .feature-item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.services i {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 15px;
+  color: #7b4397 !important;
+}
+
+.services .feature-item h3 {
+  font-size: 30px;
+}
+
+.services .feature-item p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+
+.cta {
+  position: relative;
+  padding: 250px 0;
+  background-image: url(../images/bg-cta.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.cta h4 {
+  font-size: 80px;
+  max-width: 500px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.cta .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section {
+  padding: 100px 0 !important;
+}
+
+.social i {
+  font-size: 40px;
+  line-height: 80px;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+}
+
+.footer {
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #222;
+}
+/*# sourceMappingURL=main.css.map */

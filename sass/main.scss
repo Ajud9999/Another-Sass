@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+  }
+
+@import 'mixin';
+@import 'variables';
+@import 'b-overrides';
+@import 'masterhead';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading-font;
+}
+
+
+
+
+
+#mainNav{
+    @include heading-font;
+
+    .navbar-brand{
+       color: $logocolor;
+       font-weight: 600;
+       &:hover{
+           color: $white;
+       }
+    }
+
+    .navbar-toggler{
+        font-size: 14px;
+        padding: 8px 10px;
+        color: $white;
+        border: 1px solid $white;
+    }
+    .navbar-nav {
+        > li{
+            >a {
+                font-size: 11px;
+                @include alt-font;
+                color: $white;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.about{
+    position: relative;
+    padding: 150px 0;
+
+    h2{
+        font-size: 70px;
+    }
+
+    p{
+        @include  pstyle;
+    
+    }
+  
+    .badge-link {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    img{
+        height: 60px;
+
+    }
+}
+
+.services{
+    padding: 100px 0;
+    h3{
+        font-size: 50px;
+    }
+
+    p{
+        @include  pstyle;
+    }
+
+    .service-heading{
+        margin-bottom: 100px;
+    }
+
+ .feature-item {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    i{
+        font-size: 80px;
+    display: block;
+    margin-bottom: 15px;
+    color: #7b4397 !important;
+    }
+
+    .feature-item h3{
+        font-size: 30px;
+
+    }
+
+    .feature-item p{
+        @include pstyle;
+        
+    }
+}
+
+
+
+hr{
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: rgba(34,34,34,.1);
+}
+
+
+.cta{
+    position: relative;
+    padding: 250px 0;
+    background-image: url(../images/bg-cta.jpg);
+    background-position: center;
+    background-size: cover;
+
+    h4{
+    font-size: 80px;
+    max-width: 500px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #fff;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.2);
+    }
+}
+
+section {
+    padding: 100px 0 !important;
+}
+
+.social i{
+    font-size: 40px;
+    line-height: 80px;
+
+    width: 80px;
+    height: 80px;
+    color: #fff;
+ 
+}
+
+.footer{
+    padding: 25px 0;
+    text-align: center;
+    color: rgba(255,255,255,.3);
+    background-color: #222;
+}
